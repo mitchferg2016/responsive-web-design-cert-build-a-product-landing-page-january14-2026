@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Northwind Brew | Product Landing</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header id="header">
+    <div class="brand">
+      <img
+        id="header-img"
+        src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Logo_TV_2015.png"
+        alt="Northwind Brew logo"
+      />
+      <span class="brand-name">Northwind Brew</span>
+    </div>
+
+    <nav id="nav-bar" aria-label="Primary">
+      <a class="nav-link" href="#features">Features</a>
+      <a class="nav-link" href="#demo">Demo</a>
+      <a class="nav-link" href="#pricing">Pricing</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="top">
+      <div class="hero-inner">
+        <h1>Brew café-quality coffee at home.</h1>
+        <p>
+          Meet the <strong>Northwind Brew Station</strong> — a compact brewer with
+          precise temperature control, fast cleanup, and a quiet pump.
+        </p>
+
+        <form
+          id="form"
+          action="https://www.freecodecamp.org/email-submit"
+          method="post"
+        >
+          <label class="sr-only" for="email">Email</label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            placeholder="Enter your email for launch updates"
+            required
+          />
+          <input id="submit" type="submit" value="Get Updates" />
+        </form>
+      </div>
+    </section>
+
+    <section id="features" class="section">
+      <h2>Features</h2>
+
+      <div class="cards">
+        <article class="card">
+          <h3>Smart Heat</h3>
+          <p>
+            Maintains stable brewing temperature for consistent extraction,
+            cup after cup.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Fast Cleanup</h3>
+          <p>
+            A rinse-and-go brew basket plus wipe-clean drip tray keeps mornings easy.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Quiet Pump</h3>
+          <p>
+            Designed to reduce vibration and noise so you can brew without the rattle.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="demo" class="section">
+      <h2>See it in action</h2>
+      <p class="section-lead">
+        A quick overview of the brew workflow and what makes the station different.
+      </p>
+
+      <div class="video-wrap">
+        <iframe
+          id="video"
+          src="https://www.youtube.com/embed/1APwq1df6Mw"
+          title="Northwind Brew Station Demo"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </section>
+
+    <section id="pricing" class="section">
+      <h2>Pricing</h2>
+
+      <div class="pricing-grid">
+        <article class="price-card">
+          <h3>Starter</h3>
+          <p class="price">$79</p>
+          <ul>
+            <li>Single cup mode</li>
+            <li>Reusable filter</li>
+            <li>1-year warranty</li>
+          </ul>
+          <a class="btn" href="#form">Choose Starter</a>
+        </article>
+
+        <article class="price-card featured">
+          <h3>Home Pro</h3>
+          <p class="price">$129</p>
+          <ul>
+            <li>Single + carafe mode</li>
+            <li>Precision temp control</li>
+            <li>2-year warranty</li>
+          </ul>
+          <a class="btn" href="#form">Choose Home Pro</a>
+        </article>
+
+        <article class="price-card">
+          <h3>Studio</h3>
+          <p class="price">$189</p>
+          <ul>
+            <li>Quiet pump upgrade</li>
+            <li>Metal drip tray</li>
+            <li>3-year warranty</li>
+          </ul>
+          <a class="btn" href="#form">Choose Studio</a>
+        </article>
+      </div>
+    </section>
+
+    <footer class="footer" id="footer">
+      <p>© <span id="year"></span> Northwind Brew. Built for the freeCodeCamp Responsive Web Design project.</p>
+    </footer>
+  </main>
+
+  <script>
+    // purely cosmetic, doesn't affect tests
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
